@@ -1,0 +1,123 @@
+/* HomePage.css */
+
+/* Contenitore principale */
+.container {
+    max-width: 550px;
+    margin: 80px auto; /* Centratura orizzontale */
+    padding: 60px;
+    border-radius: 15px; /* Bordo arrotondato per il contenitore */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    border: 1px solid #dcdcdc; /* Bordo leggero per il contenitore */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenitore di pagina per centrare verticalmente */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altezza minima della viewport */
+    background: linear-gradient(to right, #1975ff, #e1e1e1); /* Gradiente di sfondo per la pagina */
+}
+
+/* Effetto di sovrapposizione per il contenitore */
+.container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.1), transparent);
+    border-radius: 50%;
+    z-index: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Contenuto del form */
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1; /* Porta il form in primo piano rispetto all'effetto di sovrapposizione */
+}
+
+/* Titolo del form */
+form h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px; /* Spaziatura tra le lettere per un look elegante */
+}
+
+/* Etichette dei campi di input */
+form label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555; /* Colore dell'etichetta più chiaro */
+}
+
+/* Stile degli input */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc; /* Bordo chiaro per un aspetto pulito */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transizione fluida per il focus */
+}
+
+/* Stato di focus degli input */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #0078d4;
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Ombra più accentuata per il focus */
+    outline: none;
+}
+
+/* Pulsante di invio */
+form button {
+    background-color: #0078d4;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transizione per colore e ingrandimento */
+}
+
+/* Stato di hover del pulsante */
+form button:hover {
+    background-color: #005a9e;
+    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+/* Link nel footer */
+.footer-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #005a9e;
+    text-decoration: underline;
+    font-weight: 600; /* Font più audace al passaggio del mouse */
+}

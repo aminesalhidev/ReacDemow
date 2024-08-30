@@ -1,0 +1,38 @@
+
+/* Stile per il contenitore principale della pagina */
+.page-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; /* Altro approccio rispetto a 'height: 100vh' per garantire che l'altezza sia sempre sufficiente */
+    background-color: #ffffff; /* Colore di sfondo chiaro per la pagina */
+    margin: 0;
+  }
+
+  h1 {
+    color: #333; /* Colore del testo dell'intestazione */
+    font-size: 2rem; /* Dimensione del font dell'intestazione */
+    margin-bottom: 20px; /* Spazio sotto l'intestazione */
+    font-family: sans-serif;
+  }
+  
+  p {
+    color: #000000; /* Colore del testo del paragrafo */
+    font-size: 1rem; /* Dimensione del font del paragrafo */
+    line-height: 1.6; /* Altezza della linea per una lettura più agevole */
+  }
+  
+  button {
+    background-color: #007bff; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none; /* Rimuove il bordo predefinito del pulsante */
+    padding: 10px 20px; /* Spaziatura interna del pulsante */
+    font-size: 1rem; /* Dimensione del font del pulsante */
+    border-radius: 5px; /* Angoli arrotondati del pulsante */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    transition: background-color 0.3s ease; /* Transizione per un effetto hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Colore di sfondo del pulsante al passaggio del mouse */
+  }
+  

@@ -1,0 +1,79 @@
+/* src/styles/Header.css */
+
+header {
+    background-color: #0078f9;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  
+  .menu-items {
+    display: flex;
+  }
+  
+  .menu-items.active {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Nascondi il menu per impostazione predefinita */
+      flex-direction: column;
+      gap: 0;
+      position: absolute;
+      background: #333; /* Sfondo del menu */
+      width: 100%;
+      top: 60px;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .menu-toggle {
+      display: block; /* Mostra il pulsante di toggling sui dispositivi mobili */
+    }
+  
+    .menu-items.active {
+      display: flex; /* Mostra il menu quando è attivo */
+    }
+  }
+  
