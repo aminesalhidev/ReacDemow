@@ -6,7 +6,7 @@ const SignupPage = () => {
   return (
     <div className="container">
       <form>
-        <h1>Crea un Account</h1>
+        <h1>Registrati Ora</h1>
         <label htmlFor="name">Full Name</label>
         <input type="text" id="name" name="name" required />
 

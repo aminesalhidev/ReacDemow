@@ -7,7 +7,7 @@ const LoginPage = () => {
   return (
     <div className="container">
       <form>
-        <h1>Login</h1>
+        <h1>Accedi al tuo account</h1>
         <p>Accedi al tuo account</p>
         <label htmlFor="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required />

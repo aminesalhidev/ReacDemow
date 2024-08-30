@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     min-height: 100vh; /* Altro approccio rispetto a 'height: 100vh' per garantire che l'altezza sia sempre sufficiente */
-    background-color: #ffffff; /* Colore di sfondo chiaro per la pagina */
+   /* background-image: url('./imamgine/sfondo.jpg'); */
     margin: 0;
   }
 

@@ -5,7 +5,7 @@
     max-width: 450px;
     margin: 0 auto; /* Centratura orizzontale */
     padding: 40px;
-    background: linear-gradient(to right, #ffffff, #f4f4f4); /* Gradiente elegante e leggero */
+    background: linear-gradient(to right, #cef0ff, #ffffff); /* Gradiente elegante e leggero */
     border-radius: 15px; /* Bordo arrotondato più pronunciato */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Ombra più accentuata */
     border: 1px solid #e0e0e0; /* Bordo leggero per un look sofisticato */

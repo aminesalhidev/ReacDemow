@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage'; // Importazione di LoginPage
 import SignupPage from './pages/SignupPage'; // Importazione di SignupPage
 import Header from './components/Header'; // Importazione di Header
 
+
 function App() {
   return (
     <div className="App">
